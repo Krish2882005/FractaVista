@@ -1,3 +1,30 @@
+/build/
+/out/
+/install/
+
+# Visual Studio specific
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.aps
+*.ncb
+*.suo
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+CMakeLists.txt.user
+CTestTestfile.cmake
+compile_commands.json
+
+# Other common IDEs
+.vscode/
+.idea/
+
 # Prerequisites
 *.d
 

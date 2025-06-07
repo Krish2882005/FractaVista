@@ -1,0 +1,38 @@
+Checks: >
+  clang-analyzer-*,
+  clang-diagnostic-*,
+  -clang-diagnostic-pragma-once-outside-header,
+  concurrency-*,
+  cppcoreguidelines-*,
+  google-*,
+  hicpp-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  readability-identifier-naming
+  security-*,
+  bugprone-*,
+  #misc-*,
+
+CheckOptions:
+- { key: readability-identifier-naming.NamespaceCase, value: snake_case }
+- { key: readability-identifier-naming.ClassCase, value: PascalCase }
+- { key: readability-identifier-naming.StructCase, value: PascalCase }
+- { key: readability-identifier-naming.EnumCase, value: PascalCase }
+- { key: readability-identifier-naming.EnumConstantCase, value: PascalCase }
+- { key: readability-identifier-naming.TypedefCase, value: PascalCase }
+- { key: readability-identifier-naming.TemplateParameterCase, value: PascalCase }
+- { key: readability-identifier-naming.FunctionCase, value: PascalCase }
+- { key: readability-identifier-naming.MacroDefinitionCase, value: SCREAMING_SNAKE_CASE }
+- { key: readability-identifier-naming.GlobalConstantCase, value: SCREAMING_SNAKE_CASE }
+- { key: readability-identifier-naming.GlobalVariableCase, value: lowerCamelCase }
+- { key: readability-identifier-naming.GlobalVariablePrefix, value: g_ }
+- { key: readability-identifier-naming.StaticVariableCase, value: lowerCamelCase }
+- { key: readability-identifier-naming.StaticVariablePrefix, value: s_ }
+- { key: readability-identifier-naming.PublicMemberCase, value: PascalCase }
+- { key: readability-identifier-naming.ProtectedMemberCase, value: lowerCamelCase }
+- { key: readability-identifier-naming.ProtectedMemberPrefix, value: m_ }
+- { key: readability-identifier-naming.PrivateMemberCase, value: lowerCamelCase }
+- { key: readability-identifier-naming.PrivateMemberPrefix, value: m_ }
+- { key: readability-identifier-naming.LocalVariableCase, value: lowerCamelCase }
