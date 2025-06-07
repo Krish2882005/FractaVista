@@ -1,4 +1,9 @@
 # 🎨 FractaVista
+[![CodeScene Average Code Health](https://codescene.io/projects/67817/status-badges/average-code-health)](https://codescene.io/projects/67817)
+[![CodeFactor](https://www.codefactor.io/repository/github/krish2882005/fractavista/badge)](https://www.codefactor.io/repository/github/krish2882005/fractavista)
+![C++](https://img.shields.io/badge/C++-17-blue.svg?logo=c%2B%2B)
+![OpenGL](https://img.shields.io/badge/OpenGL-Rendering-blue?logo=opengl)
+![License](https://img.shields.io/github/license/krish2882005/fractavista)
 ![Status](https://img.shields.io/badge/Status-Work%20In%20Progress-orange)
 
 **A modern, GPU-accelerated fractal explorer built with C++ and OpenGL.**
@@ -20,6 +25,9 @@ FractaVista is a high-performance, interactive desktop application for exploring
   - Mandelbrot
   - Julia
   - Burning Ship
+  - Cubic Mandelbrot
+  - Tricorn
+  - Newton
 - **Interactive Navigation**: Smoothly pan and zoom into the intricate details of each fractal with simple mouse controls.
 - **Real-time Parameter Control**: Tweak parameters like max iterations, zoom, position, and Julia set constants on the fly.
 - **High-Resolution Export**: Save stunning, high-quality screenshots of your discoveries with built-in supersampling options (up to 8x).
@@ -29,7 +37,7 @@ FractaVista is a high-performance, interactive desktop application for exploring
 
 - **Language**: C++
 - **Graphics API**: OpenGL 4.3+
-- **Windowing & Input**: SDL3
+- **Windowing & Input**: [SDL3](https://github.com/libsdl-org/SDL)
 - **GUI**: [Dear ImGui](https://github.com/ocornut/imgui)
 - **OpenGL Loading**: [GLAD](https://glad.dav1d.de/)
 - **Image Loading/Saving**: [SDL3_image](https://github.com/libsdl-org/SDL_image)
@@ -39,8 +47,8 @@ FractaVista is a high-performance, interactive desktop application for exploring
 
 ### Prerequisites
 
-- A C++ compiler that supports C++17 or newer (GCC, Clang, MSVC).
-- [CMake](https.cmake.org/) (version 3.16 or higher).
+- A C++ compiler that supports C++ 17 or newer (GCC, Clang, MSVC).
+- [CMake](https://cmake.org/) (version 3.16 or higher).
 - The following libraries installed on your system:
   - [SDL3](https://github.com/libsdl-org/SDL)
   - [SDL3_image](https://github.com/libsdl-org/SDL_image)
@@ -85,7 +93,7 @@ FractaVista is a high-performance, interactive desktop application for exploring
 
 ## 🔮 Future Roadmap
 
-- [ ] Implement more fractal algorithms (e.g., Newton, Nova).
+- [ ] Implement more fractal algorithms (e.g., Nova, Magnet).
 - [ ] Add customizable color palettes and color smoothing.
 - [ ] Implement keyframe animation to export videos of fractal zooms.
 - [ ] Display performance metrics (render time, FPS) in the UI.
