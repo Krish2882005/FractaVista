@@ -1,4 +1,5 @@
 # 🎨 FractaVista
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4e052320792c4cc19daa6629218f3335)](https://app.codacy.com/gh/Krish2882005/FractaVista?utm_source=github.com&utm_medium=referral&utm_content=Krish2882005/FractaVista&utm_campaign=Badge_Grade)
 [![CodeScene Average Code Health](https://codescene.io/projects/67817/status-badges/average-code-health)](https://codescene.io/projects/67817)
 [![CodeFactor](https://www.codefactor.io/repository/github/krish2882005/fractavista/badge)](https://www.codefactor.io/repository/github/krish2882005/fractavista)
 ![C++](https://img.shields.io/badge/C++-17-blue.svg?logo=c%2B%2B)
