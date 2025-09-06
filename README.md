@@ -13,7 +13,7 @@
 FractaVista is a high-performance, interactive desktop application for exploring the mesmerizing beauty of fractals. It leverages modern C++ and the power of GPU compute shaders to deliver a smooth, real-time exploration experience with an intuitive user interface.
 
 <p align="center">
-  <img src="assets/FractaVista.png" alt="FractaVista Icon" width="500"/>
+  <img src="assets/FractaVista.png" alt="FractaVista Icon"/>
 </p>
 
 ---
