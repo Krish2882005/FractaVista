@@ -13,7 +13,7 @@
 FractaVista is a high-performance, interactive desktop application for exploring the mesmerizing beauty of fractals. It leverages modern C++ and the power of GPU compute shaders to deliver a smooth, real-time exploration experience with an intuitive user interface.
 
 <p align="center">
-  <img src="assets/FractaVista.png" alt="FractaVista Icon" width="500"/>
+  <img src="assets/FractaVista.png" alt="FractaVista Icon"/>
 </p>
 
 ---
@@ -58,6 +58,9 @@ FractaVista is a high-performance, interactive desktop application for exploring
   - [SDL3_image](https://github.com/libsdl-org/SDL_image)
   - [Dear ImGui](https://github.com/ocornut/imgui)
   - [GLM](https://github.com/g-truc/glm)
+  - [nlohmann/json](https://github.com/nlohmann/json)
+  - [Native File Dialog](https://github.com/mlabbe/nativefiledialog)
+  - [spdlog](https://github.com/gabime/spdlog)
 
 ### Building
 
@@ -98,7 +101,6 @@ FractaVista is a high-performance, interactive desktop application for exploring
 ## 🔮 Future Roadmap
 
 - [ ] Implement more fractal algorithms (e.g., Nova, Magnet).
-- [ ] Add customizable color palettes and color smoothing.
 - [ ] Implement keyframe animation to export videos of fractal zooms.
 - [ ] Display performance metrics (render time, FPS) in the UI.
 
