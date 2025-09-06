@@ -1,0 +1,36 @@
+name: CMake on Windows
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup vcpkg
+      run: |
+        git clone https://github.com/microsoft/vcpkg.git C:\vcpkg
+        C:\vcpkg\bootstrap-vcpkg.bat
+      shell: cmd
+
+    - name: Install dependencies via vcpkg
+      run: |
+        C:\vcpkg\vcpkg install sdl3 sdl3-image imgui[docking-experimental,opengl3-binding,sdl3-binding] glm nlohmann-json nativefiledialog-extended spdlog zlib libpng libjpeg-turbo
+      shell: cmd
+
+    - name: Configure CMake
+      run: cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_BUILD_TYPE=%BUILD_TYPE%
+      shell: cmd
+
+    - name: Build
+      run: cmake --build build --config %BUILD_TYPE%
+      shell: cmd
