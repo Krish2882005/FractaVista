@@ -1,10 +1,15 @@
 #include <stdexcept>
 
 #include "app/Application.hpp"
-#include "utils/Logger.hpp"
+#include "util/Logger.hpp"
 
-int main(int argc, char* argv[])
+int main()
 {
+	Log::Init();
+	Log::SetLevel(spdlog::level::info);
+
+	int returnCode = 0;
+
 	try
 	{
 		Application app;
@@ -12,8 +17,16 @@ int main(int argc, char* argv[])
 	}
 	catch (const std::exception& e)
 	{
-		Logger::Error("A fatal error occurred: ", e.what());
-		return 1;
+		FRACTAL_CRITICAL("A fatal error occurred and the application must close: {}", e.what());
+		returnCode = 1;
 	}
-	return 0;
+	catch (...)
+	{
+		FRACTAL_CRITICAL("An unknown fatal error occurred and the application must close.");
+		returnCode = 1;
+	}
+
+	Log::Shutdown();
+
+	return returnCode;
 }

@@ -2,19 +2,20 @@
 
 #include <glm/vec2.hpp>
 
-#include "FractalType.hpp"
+#include "FractalTypes.hpp"
 
 struct FractalState
 {
-		int width = 1280;
-		int height = 720;
-
+		int renderWidth = 1280;
+		int renderHeight = 720;
 		FractalType type = FractalType::Mandelbrot;
 		glm::dvec2 offset = { -0.75, 0.0 };
 		double zoom = 0.4;
 		int maxIterations = 256;
 
-		glm::dvec2 juliaConstant = { -0.8, 0.156 };
+		FractalSpecificParams specificParams;
+
+		ColoringParams coloring;
 
 		bool needsUpdate = true;
 };

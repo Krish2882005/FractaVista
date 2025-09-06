@@ -42,6 +42,10 @@ FractaVista is a high-performance, interactive desktop application for exploring
 - **OpenGL Loading**: [GLAD](https://glad.dav1d.de/)
 - **Image Loading/Saving**: [SDL3_image](https://github.com/libsdl-org/SDL_image)
 - **Math**: [GLM](https://github.com/g-truc/glm)
+- **JSON Parsing**: [nlohmann/json](https://github.com/nlohmann/json)
+- **File Dialogs**: [Native File Dialog](https://github.com/mlabbe/nativefiledialog)
+- **Logging**: [spdlog](https://github.com/gabime/spdlog)
+
 
 ## 🚀 Getting Started
 
